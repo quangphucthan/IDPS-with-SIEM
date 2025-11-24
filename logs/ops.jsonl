@@ -1,0 +1,4 @@
+{"ts":"2025-11-13T22:41:54.876827+00:00","level":"INFO","component":"runner","msg":"start_pcap","kv":{"file":"/Users/ICT/Desktop/Online Stuff/Schoo/Years/Final Year Plis/Network ShiftKey/Course Project Milestone 2/Course Project/pcaps/dns_examples.pcapng"}}
+{"ts":"2025-11-13T22:41:55.807886+00:00","level":"INFO","component":"runner","msg":"shutdown","kv":{"reason":"EOF_or_SIGINT"}}
+{"ts":"2025-11-13T22:41:55.901965+00:00","level":"INFO","component":"runner","msg":"start_live","kv":{"iface":"lo","dry_run":true}}
+{"ts":"2025-11-13T22:41:57.945025+00:00","level":"INFO","component":"runner","msg":"shutdown","kv":{"reason":"SIGINT"}}

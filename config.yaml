@@ -1,0 +1,23 @@
+capture:
+  iface: "lo"                   # loopback by default
+  pcap: "./pcaps/dns_examples.pcapng"
+  dry_run: false                # set true (or --dry-run) for live tests in CI
+
+paths:
+  logs_dir: "./logs"
+
+rules:
+  dns_suspicious: true
+  icmp_flood: true
+  arp_spoof: true
+  http_keyword: true           # optional
+
+thresholds:
+  icmp_per_sec: 100
+  arp_window_sec: 30
+  dns_label_max: 63
+  dns_name_max: 253
+  dns_entropy_threshold: 3.5
+
+siem:
+  enable: true
