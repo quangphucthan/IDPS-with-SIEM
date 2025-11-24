@@ -79,42 +79,6 @@ python scripts/run_tests.py
 
 The script will print pass/fail results and exit with a non-zero code on failure.
 
-## Configuration
-
-Edit `config.yaml` to customize thresholds and enable/disable rules:
-
-### Thresholds
-
-```yaml
-thresholds:
-  icmp_per_sec: 100              # Packets per second to consider ICMP flood
-  arp_window_sec: 30              # Time window (seconds) for ARP detection
-  dns_label_max: 63               # Maximum DNS label length
-  dns_name_max: 253               # Maximum DNS name length
-  dns_entropy_threshold: 3.5     # Entropy threshold for DNS names
-```
-
-### Rules
-
-Enable/disable detection rules:
-
-```yaml
-rules:
-  dns_suspicious: true    # Detect suspicious DNS queries
-  icmp_flood: true       # Detect ICMP floods
-  arp_spoof: true        # Detect ARP spoofing
-  http_keyword: true      # Detect keywords in HTTP (bonus feature)
-```
-
-### Capture Settings
-
-```yaml
-capture:
-  iface: "lo"            # Default interface (loopback)
-  pcap: "./pcaps/dns_examples.pcapng"
-  dry_run: false         # Dry-run mode
-```
-
 ## Detectors
 
 ### DNS Suspicious Name Detection
